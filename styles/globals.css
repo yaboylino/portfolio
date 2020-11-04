@@ -248,8 +248,15 @@ form button {
 /* ------------------------ Media Queries ---------------------------- */
 
 @media screen and (max-width: 768px) {
+  * {
+    overflow: none;
+  }
   .layout {
     display: block;
+  }
+  .nav-menu {
+    justify-content: space-between;
+    width: 60% !important;
   }
   .main-picture {
     width: 100vw;
