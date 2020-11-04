@@ -39,7 +39,7 @@ hr {
 .main-picture {
   width: 50vw;
   height: 100vh;
-  background: url("../public/assets/front1.jpg");
+  background: url("../public/assets/front3.jpg");
   background-size: cover;
   background-position: right;
   z-index: 20;
@@ -80,12 +80,14 @@ hr {
   font-size: 14px;
   color: #48c9e4;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .about h3 {
   font-size: 26px;
   margin-bottom: 30px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .about p {
@@ -106,12 +108,14 @@ hr {
   font-size: 14px;
   color: #48c9e4;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .contact h3 {
   font-size: 26px;
   margin-bottom: 30px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .contact p {
@@ -199,12 +203,13 @@ form button {
 
 .services h2 {
   margin: 0px 50px 0 50px;
+  text-align: center;
 }
 
 .services h3 {
   letter-spacing: 1px;
-  margin-left: 50px;
   font-size: 26px;
+  text-align: center;
 }
 
 .services h5 {
@@ -278,8 +283,6 @@ form button {
 
   .about {
     margin: 50px 20px;
-  }
-  .services {
   }
   .service-boxes {
     margin: 50px 20px;
