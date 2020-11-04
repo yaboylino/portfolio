@@ -1,65 +1,41 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head"
+import Layout from "../components/Layout"
+import { motion } from "framer-motion"
+import services from "../misc/icons"
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Web Developer</title>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: [0.61, 1, 0.88, 1], duration: 1.5 }}>
+        <div className="about">
+          <motion.div initial={{ translateX: 50, opacity: 0 }} animate={{ translateX: 0, opacity: 1 }} transition={{ ease: [0.61, 1, 0.88, 1], duration: 1 }}>
+            <h1>WEB DEVELOPER</h1>
+            <h3>LIONEL LORD</h3>
+          </motion.div>
+          <p>Building smart websites and web applications for organizations that want to take steps in digital transformation, that's what I like to do. As an independent web developer I apply my experience as a product and unit manager to build the ultimate website or web application, matching the needs of customers and users.</p>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+        <div className="services">
+          <motion.div initial={{ translateX: 50, opacity: 0 }} animate={{ translateX: 0, opacity: 1 }} transition={{ ease: [0.61, 1, 0.88, 1], duration: 1 }}>
+            <h2>WHAT I DO</h2>
+            <h3>SERVICES</h3>
+          </motion.div>
+          <div className="service-boxes">
+            {services.map(x => (
+              <div className="service-box">
+                <img src={`${x.icon}`} alt="" />
+                <h5>{x.title}</h5>
+                <p>{x.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="copyright">
+          <p>© Lionel Lord | All Rights Reserved.</p>
+        </div>
+      </motion.div>
+    </Layout>
   )
 }
