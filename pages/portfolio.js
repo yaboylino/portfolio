@@ -1,8 +1,8 @@
 import Layout from "../components/Layout"
 import Head from "next/head"
 
-function portfolio(data) {
-  const port = data.data.clients
+const portfolio = data => {
+  const clients = data.data.clients
   return (
     <Layout>
       <Head>
@@ -12,18 +12,19 @@ function portfolio(data) {
         <h1>PORTFOLIO</h1>
         <h3>LIONEL LORD</h3>
       </div>
-      {port.map(x => (
+      {clients.map(x => (
         <div key={x.id}>
           <h1>{x.name}</h1>
+          <h3>{x.url}</h3>
         </div>
       ))}
     </Layout>
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`https://stylishbaby.nl/api/portfolio`)
+  const res = await fetch(`http://lionellord.nl/api/portfolio`)
   const data = await res.json()
 
   // Pass data to the page via props

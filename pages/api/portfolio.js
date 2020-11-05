@@ -1,10 +1,6 @@
 import { PrismaClient } from "@prisma/client"
 
-const prisma = new PrismaClient({
-  __internal: {
-    useUds: true
-  }
-})
+const prisma = new PrismaClient()
 
 export default async (req, res) => {
   const clients = await prisma.portfolio.findMany()

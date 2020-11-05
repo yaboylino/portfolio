@@ -20,6 +20,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "remove": "^0.1.5",
+    "sqlite": "^4.0.15",
+    "swr": "^0.3.8",
     "yup": "^0.29.3"
   },
   "devDependencies": {
