@@ -1,7 +1,9 @@
-import portfolio from "../../data/portfolio"
+import { PrismaClient } from "@prisma/client"
+
+const prisma = new PrismaClient()
 
 export default async (req, res) => {
-  const clients = portfolio
+  const clients = await prisma.portfolio.findMany()
   console.log(clients)
   res.json({ clients })
 }
