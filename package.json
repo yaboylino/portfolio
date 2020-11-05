@@ -9,14 +9,20 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@prisma/client": "^2.10.2",
+    "firebase": "^7.24.0",
+    "firebase-admin": "^9.3.0",
     "formik": "^2.2.1",
     "framer-motion": "^2.9.4",
     "next": "10.0.1",
+    "nookies": "^2.5.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "remove": "^0.1.5",
     "yup": "^0.29.3"
   },
   "devDependencies": {
+    "@prisma/cli": "^2.10.2",
     "emailjs-com": "^2.6.3"
   }
 }

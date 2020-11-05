@@ -1,10 +1,13 @@
 import "../styles/globals.css"
+import { AuthProvider } from "../auth"
 import { AnimatePresence } from "framer-motion"
 
 function MyApp({ Component, pageProps }) {
   return (
     <AnimatePresence exitBeforeEnter>
-      <Component {...pageProps} />
+      <AuthProvider>
+        <Component {...pageProps} />
+      </AuthProvider>
     </AnimatePresence>
   )
 }

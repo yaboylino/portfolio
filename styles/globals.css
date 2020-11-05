@@ -189,6 +189,11 @@ form button {
   color: white;
   border: 0;
 }
+form button:hover {
+  background: white;
+  color: #48c9e4;
+  border: 1px solid #48c9e4;
+}
 .status {
   margin-top: 15px;
   margin-left: 50px;
@@ -274,11 +279,6 @@ form button {
 
   .main {
     width: 100vw;
-  }
-
-  .services h2,
-  .services h3 {
-    margin-left: 50px;
   }
 
   .about {
