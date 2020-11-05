@@ -4,6 +4,7 @@ const prisma = new PrismaClient()
 
 export default async (req, res) => {
   try {
+    await prisma.$connect
     const clients = await prisma.portfolio.findMany()
     res.status(200)
     res.json({ clients })
