@@ -9,7 +9,6 @@
     "export": "next build && next export"
   },
   "dependencies": {
-    "@prisma/cli": "^2.10.2",
     "@prisma/client": "^2.10.2",
     "dotenv-load": "^2.0.0",
     "firebase": "^7.24.0",
@@ -24,6 +23,7 @@
     "yup": "^0.29.3"
   },
   "devDependencies": {
+    "@prisma/cli": "^2.10.2",
     "emailjs-com": "^2.6.3"
   }
 }
