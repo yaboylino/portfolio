@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@prisma/client": "^2.10.2",
+    "dotenv-load": "^2.0.0",
     "firebase": "^7.24.0",
     "firebase-admin": "^9.3.0",
     "formik": "^2.2.1",

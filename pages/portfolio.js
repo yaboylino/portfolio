@@ -3,7 +3,6 @@ import Head from "next/head"
 
 function portfolio(data) {
   const port = data.data.clients
-  console.log(port)
   return (
     <Layout>
       <Head>
@@ -24,7 +23,7 @@ function portfolio(data) {
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`http://localhost:3000/api/portfolio`)
+  const res = await fetch(`${process.env.URL}/api/portfolio`)
   const data = await res.json()
 
   // Pass data to the page via props
