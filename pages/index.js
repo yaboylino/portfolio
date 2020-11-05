@@ -15,7 +15,7 @@ export default function Home() {
         <div className="about">
           <motion.div initial={{ translateX: 50, opacity: 0 }} animate={{ translateX: 0, opacity: 1 }} transition={{ ease: [0.61, 1, 0.88, 1], duration: 1 }}>
             <h1>WEB DEVELOPER</h1>
-            <h3>{user.email}</h3>
+            <h3>LIONEL LORD</h3>
           </motion.div>
           <p>Building smart websites and web applications for organizations that want to take steps in digital transformation, that's what I like to do. As an independent web developer I apply my experience as a product and unit manager to build the ultimate website or web application, matching the needs of customers and users.</p>
         </div>
