@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://u38904p34216_sapper:qwerty1234@185.104.29.22:3306/u38904p34216_sapper?schema=public"
+  url = "***"
 }
 
 model Portfolio {
