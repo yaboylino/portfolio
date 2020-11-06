@@ -257,6 +257,12 @@ form button:hover {
   font-weight: 200;
 }
 
+/* ------------------------ Portfolio ---------------------------- */
+
+h1.portfolio {
+  text-align: center;
+}
+
 /* ------------------------ Media Queries ---------------------------- */
 
 @media screen and (max-width: 768px) {
